@@ -1,86 +1,139 @@
-*,
-::after,
-::before {
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
 body {
-    background: linear-gradient(-120deg, #000000, #220b00,#be2c00 )
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
 
-body,
- textarea{
-    font-family: sans-serif;
- }
+header {
+    text-align: center;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 0;
+}
 
- .container {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
- }
+h1, h2 {
+    margin: 0 0 20px;
+}
 
-.form_box {
-    display: flex;
-    flex-direction: column;
+.form-section {
     background-color: #fff;
     border-radius: 8px;
-    width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.form_box .title{
-    padding: 24px 32px;
-    font-size: 24px;
-    border-bottom: thin solid #ccc;
-}
-
-.form_box form {
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    padding: 32px;
-}
-
-.form_box input,
-.form_box textarea {
-    width: calc(50% - 8px);
-    height: 48px;
-    border-radius: 8px;
-    border: thin solid #999;
-    padding-left: 16px;
-    margin-bottom: 16px;
-    font-size: 16px;
-}
-
-.form_box input:first-child {
-    margin-right: 16px;
-}
-
-.form_box input[name=cpf]{
-    width: 100%;
-}
-
-.form_box input[name=tel]{
-    width: 100%;
-}
-
-.form_box button {
+label {
     display: block;
-    border: none;
-    outline: none;
-    width: 180px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: #ff3c00;
-    color: #fff;
-    font-size: 16px;
     font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.form_box button:hover {
-    background-color: #6b1900;
+button:hover {
+    background-color: #2d4373;
+}
+
+}
+
+header {
+    text-align: center;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+.form-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d4373;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .navbar-nav a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ff3c00;
+  }
+  
+  .navbar-nav a:hover {
+    color: #fff;
+    background-color: #ff3c00;
+    border-radius: 5px;
+  }
+  
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.container{
+    padding: 20px;
 }
